@@ -1,2 +1,3 @@
 # SoftUni_Projects
-Projects for my courses at SoftUni
+Projects from my Software engineering courses at SoftUni
+*https://softuni.bg/curriculum*
