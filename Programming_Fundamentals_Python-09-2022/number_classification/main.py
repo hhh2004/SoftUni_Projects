@@ -1,0 +1,5 @@
+numbers = list(map(int, input().split(', ')))
+print('Positive: ' + ', '.join([str(num) for num in numbers if num >= 0]))
+print('Negative: ' + ', '.join([str(num) for num in numbers if num < 0]))
+print('Even: ' + ', '.join([str(num) for num in numbers if num % 2 == 0]))
+print('Odd: ' + ', '.join([str(num) for num in numbers if num % 2]))
