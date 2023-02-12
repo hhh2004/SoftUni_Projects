@@ -2,6 +2,10 @@ from os import listdir, path
 
 directory = input()
 files_in_dir = [f for f in listdir(directory) if path.isfile(path.join(directory, f))]
+folders_in_dir = [f for f in listdir(directory) if path.isdir(path.join(directory, f))]
+for folder in folders_in_dir:
+    subdirectory = directory + '/' + folder
+    files_in_dir.extend([f for f in listdir(subdirectory) if path.isfile(path.join(subdirectory, f))])
 extensions_dict = dict()
 
 for file in files_in_dir:
